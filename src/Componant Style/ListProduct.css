@@ -1,0 +1,33 @@
+
+
+
+.allProduct{
+    display: flex;
+    flex-direction: column;
+    gap: .7vw;
+    margin: 15px 6.5vw;
+}
+
+
+.allProduct .headerListProduct{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.allProduct .headerListProduct .seeAll{
+    color: #F26522;
+    font-weight: 450;
+}
+
+.allProduct .headerListProduct p {
+    font-size: 1.6vw;
+    font-weight: 550;
+}
+
+.allProduct .containerProducts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 60px;
+}
+

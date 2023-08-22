@@ -1,0 +1,19 @@
+.container404{
+    height: 37vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#P404{
+    letter-spacing: 5px;
+    font-size: 8vw;
+    font-weight: 700;
+}
+
+#pageN{
+    font-size: 2vw;
+    font-weight: 500;
+}

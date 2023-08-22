@@ -1,0 +1,74 @@
+.homeInformation{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 6.5vw;
+}
+
+
+.firstInfo, .secandInfo, .thirdInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.firstInfo, .secandInfo{
+    gap: .2vw;
+}
+
+
+
+.thirdInfo{
+    align-items: center;
+    font-size: 1.3vw;
+    font-weight: 700;
+    background: linear-gradient(to bottom right, rgb(180,136,17), rgb(217,195,0));
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    color: transparent; /* Hide the actual text */
+}
+
+.Info{
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+}
+
+.imgInfo{
+    height: 1.7vw;
+}
+
+.pInfo{
+    font-size: .95vw;
+    font-weight: 500;
+}
+
+.fourthInfo{
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+}
+
+.fourthInfo img{
+    height: 4vw;
+}
+
+.fourthInfo p{
+    font-size: 1.06vw;
+    font-weight: 600;
+}
+
+.fourthInfo #wilayas{
+    background: linear-gradient(to bottom right, rgb(253,216,25), rgb(232,5,5));
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    color: transparent; /* Hide the actual text */
+}
+
+
+
+
+
+
+
+
+

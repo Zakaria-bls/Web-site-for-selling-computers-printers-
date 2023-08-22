@@ -1,0 +1,121 @@
+
+.footerContainer{
+    margin: 6vw 6.2vw 2vw 6.2vw;
+}
+
+.footer{
+    display: flex;
+}
+
+.footer Link,.footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.s1{
+    flex:2;
+}
+
+.s1Up, .s1Down{   
+    display: flex;
+    flex-direction: column;
+}
+
+.s1Up{
+    gap: 2.5vw;
+}
+
+#linkFooter{
+
+    width: fit-content;
+}
+
+.s1Up img{
+    height: 4vw;
+}
+
+.Txt{
+    display: flex;
+    flex-direction: column;
+    gap: .6vw;
+}
+
+.Txt p{
+    font-size: .75vw;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 400;
+    color:#8F90A6;
+}
+
+.s1Down{
+    gap: 1.5vw;
+}
+
+.s1Down .socialMedia{
+    display: flex;
+    gap: 2vw;
+}
+
+.s1Down .socialMedia img{
+    height: 1.3vw;
+}
+
+
+.footerSame{
+    margin-top: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    flex: 1;
+}
+
+.footerSameTitle{
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+.footerDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    font-size: .9vw;
+}
+
+.footerSameTxt:hover{
+    text-decoration: underline;
+}
+
+.inputTxt{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.inputContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputContainer input{
+    width: 100%;
+    padding: .9vw;
+    border-radius: 10px ;
+    outline: none;
+    border: 2px solid #D0D0E3;
+    color: #8F90A6;
+}
+
+.sendMail{
+    position: absolute;
+    background-color: #F26522;
+    width: fit-content;
+    height: 2.5vw;
+    width: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    right: 15px;
+}
