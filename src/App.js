@@ -9,9 +9,6 @@ import Login from './Pages/Login';
 import Dashboard from './Pages/Dashboard';
 import PageNotFound from './Pages/PageNotFound';
 
-import File from './Pages/File';
-
-
 
 function App() {
   return (
@@ -24,8 +21,7 @@ function App() {
         <Route path="Entreprises" element={<Entreprises />} />  
         <Route path="Partner" element={<Partner />} /> 
         <Route path="Login" element={<Login />} />
-        <Route path="Dashboard" element={<Dashboard/>}/>
-        <Route path="Dashboard/file" element={<File/>}/>
+        <Route path="Dashboard/:filter" element={<Dashboard/>}/>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
 

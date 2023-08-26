@@ -1,0 +1,121 @@
+.sidedBarContainer{
+    width: 24%;
+    height: 100vh;
+    box-shadow: 0px 4px 20px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5vw;
+}
+
+.sidedBarContainer ul li {
+    list-style: none;
+}
+
+.sidedBarContainer a{
+    text-decoration: none;
+    color: black;
+}
+
+.sidedBarContainer hr{
+    width: 95%;
+    outline: none;
+}
+
+.sidedBarContainer #logoSideBar{
+    height: 110px;
+}
+
+.sidedBarContainer .sideBar{
+    width: 100%;
+    padding: 1vw 1.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+.sidedBarContainer .sideBarList{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.iconsSideBar{
+    height: 32px;
+}
+
+.arrowIcon{
+    height: 14px;
+}
+
+.item div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.04vw;
+    font-weight: 500;
+}
+
+.ListInsideList{
+    margin: 10px 3vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .6vw;
+}
+
+.ListInsideList li{
+    gap: 1vw;
+    width: fit-content;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.ListInsideList li .linkInsideList{
+    display: flex;
+    padding: 1px 8px;
+    gap: .4vw;
+    font-size: .9vw;
+    font-weight: 500;
+}
+
+
+.deconnecter{
+    display: flex;
+    gap: 5px;
+    background-color: #F26522;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 0px;
+    font-size: 1.3vw;
+    font-weight: 550;
+    color: white;
+    border-radius:10px ;
+    cursor: pointer;
+}
+
+.activee-link{
+    background-color: #F26522;
+    color: white;
+}
+
+.notActibe{
+    color: rgb(113, 113, 113);
+    background-color: rgb(230, 230, 230);
+}
+
+.active-link{
+    background-color: rgba(242,101,34,.4);
+}

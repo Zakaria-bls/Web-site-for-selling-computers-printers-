@@ -48,8 +48,7 @@ export default function Login() {
     axios.post('http://localhost:8000/profile',{token})
     .then(response => {
         if(response.data.username){
-          navigate('/Dashboard');
-          console.log(response.data.username)
+          navigate('/Dashboard/Dashboard');
         }
         
     })
@@ -69,7 +68,7 @@ export default function Login() {
             }else if (response.data.token){
               const token = response.data.token;
               setError(false)
-              navigate('/Dashboard');
+              navigate('/Dashboard/Dashboard');
               localStorage.setItem('jwt', token);
             }
             
@@ -108,7 +107,7 @@ export default function Login() {
           
         </div>
 
-        <button onClick={handleLogin}>Login</button>
+        <button id='button' onClick={handleLogin}>Login</button>
 
       </div>
     </div>

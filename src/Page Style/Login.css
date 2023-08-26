@@ -79,3 +79,15 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+#button{
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 10px; 
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #F26522;
+}

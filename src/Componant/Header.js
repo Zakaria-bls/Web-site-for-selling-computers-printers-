@@ -26,7 +26,7 @@ export default function Header() {
       </div>
       <ul className='headerList'>
           <li>
-          <select className="Links" onClick={handleSelectChange}>
+          <select className= {`Links ${isActive("/Product/Products")}`}  onClick={handleSelectChange}>
                 <option value="Products">Product</option>
                 <option value="Laptops">Laptops</option>
                 <option value="Imprements">Imprements</option>

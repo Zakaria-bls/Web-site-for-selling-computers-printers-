@@ -1,8 +1,23 @@
-import React, {useEffect} from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, {useEffect, useState} from 'react'
+import { useNavigate, useParams, useLocation, Link } from 'react-router-dom'
 import axios from 'axios'
+import '../Page Style/Dashboard.css'
+
+import SideBar from '../Componant/SideBar'
+
+import add from '../assets/add.svg'
+import search from '../assets/search.svg'
+
+
+
 
 export default function Dashboard() {
+
+  const [path, setPath] = useState(false)
+  
+  const location = useLocation();
+
+  const { filter } = useParams();
 
   const navigate = useNavigate();
 
@@ -14,11 +29,38 @@ export default function Dashboard() {
         navigate('/login');
       }
     })
-  },[navigate])
+
+    location.pathname === "/Dashboard" ? setPath(true) : setPath(false);
+
+  },[navigate,location.pathname])
 
   return (
-    <div>
-      admine
+    <div className='dashboardContainer'>
+      <SideBar/>
+
+      
+
+      <div className='allDashboards'>
+        <div className='headerDashboard'>
+          <div className='searchBarDash'>
+            <div>
+              <img src={search} alt=''/>
+              <input type="text" placeholder='Search for a Model'/>
+            </div>
+            <hr/>
+            <select>
+              <option>Brand</option>
+            </select>
+          </div>
+          <Link to='/Dashboard/add article' className='addArticle'>
+            <img src={add} alt=''/>
+            <p>Ajouter article</p>
+          </Link>
+        </div>
+
+        {path ? <p>Welcome To dashboard</p> : `${filter}`}
+      </div>
+      
     </div>
   )
 }
