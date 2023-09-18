@@ -135,7 +135,7 @@ export default function SideBar() {
                   <img className='iconsSideBar'  src={printers} alt=''/>
                   <div>
                     <p>Imprimantes</p>
-                    <img className='arrowIcon' src={itemVisible2 ? `${arrUp}` :`${arrDown}`} alt=''/>
+                    <img className='arrowIcon' src={itemVisible2 ? `${arrUp}`  :`${arrDown}`} alt=''/>
                   </div>
               </div>
 
