@@ -10,7 +10,7 @@ export default function Product() {
 
   return (
     <div>
-          <Header/>
+        <Header/>
         Products
         <p>Filter: {filter}</p>
         <Footer/>

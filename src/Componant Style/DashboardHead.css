@@ -1,0 +1,75 @@
+
+.headerDashboard{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.headerDashboard a{
+    text-decoration: none;
+}
+
+.searchBarDash{
+    display: flex;
+    width: 55%;
+    gap: .3vw;
+    background-color: #E9E9E9;
+    padding: 12px 16px;
+    border-radius: 8px;
+}
+
+.searchBarDash hr{
+    border: .6px solid #444444;
+}
+
+.searchBarDash div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 3;
+
+}
+
+.searchBarDash select{
+    flex: 1;
+}
+
+.searchBarDash div input{
+    width: 100%;
+    color: #333333;
+}
+
+.searchBarDash div input, .searchBarDash select {
+    border: none;
+    background-color: transparent;
+    font-size:.97vw;
+    font-weight: 450;
+}
+
+.searchBarDash div input:focus,.searchBarDash select:focus{
+    border: none;
+    outline: none;
+}
+
+.addArticle{
+    display: flex;
+    align-items: center;
+    background-color: #F26522;
+    padding: 8px 12px;
+    color: white;
+    font-size:1.2vw;
+    font-weight: 500;
+    gap: 6px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.addArticle img{
+    transition: .3s;
+}
+
+.addArticle:hover img{
+    transform: scale(.7)
+}
+

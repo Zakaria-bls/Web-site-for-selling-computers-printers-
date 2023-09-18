@@ -1,0 +1,130 @@
+
+.containerTable{
+    position: relative;
+}
+
+.dataShows{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8vw;
+}
+
+.titleTables{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+table{
+    width: 100%;
+}
+
+th p{
+    opacity: 0;
+}
+
+th, td{
+    padding: .4vw .8vw;
+    border-bottom:1px solid #c6c6c6;
+}
+
+th{
+    text-align: left;
+    font-size: .9vw;
+    color: #6a6a6a;
+}
+
+
+td{
+    text-align: left;
+    font-size: .8vw;
+}
+
+td .imageProduct{
+    border-radius: 5px;
+    height: 3vw;
+}
+
+.descTable{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+.images{
+    text-align: center;
+}
+
+.supptable{
+    cursor: pointer;
+}
+
+.eyetable{
+    cursor: pointer;
+}
+
+.deleConf{
+    position: absolute;
+    top: 22%;
+    left:18%;
+    width: 40%;
+    height: 11.5VW;
+    box-shadow: 0px 0px 10000vw rgb(110, 110, 110);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.upDele{
+    width: 100%;
+    height: 35%;
+    background: linear-gradient(to bottom, rgba(255,68,68,0.4), #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upDele div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.downDele{
+    margin: 0vw 1.5vw;
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+}
+
+.downDele .textDel{
+    font-size: .9vw;
+    font-weight: 500;
+}
+
+.downDele div{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1vw;
+}
+
+.downDele div p {
+    padding: .4vw 0px;
+    width: 6vw;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 1vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.downDele .cancelDel{
+    background-color: #E9E9E9;
+}
+
+.downDele .okDel{
+    background-color: #FF4444;
+    color: white;
+}

@@ -1,23 +1,22 @@
-import React, {useEffect, useState} from 'react'
-import { useNavigate, useParams, useLocation, Link } from 'react-router-dom'
+import React, {useEffect} from 'react'
+import { useNavigate, useLocation, useParams } from 'react-router-dom'
 import axios from 'axios'
 import '../Page Style/Dashboard.css'
 
 import SideBar from '../Componant/SideBar'
-
-import add from '../assets/add.svg'
-import search from '../assets/search.svg'
-
-
+import LaptopsContainer from '../Componant/LaptopsContainer'
+import PrinterContainer from '../Componant/PrinterContainer'
+import AddLaptop from '../Componant/AddLaptop'
+import AddPrinter from '../Componant/AddPrinter'
+import DetailProduct from '../Componant/DetailProduct'
 
 
 export default function Dashboard() {
 
-  const [path, setPath] = useState(false)
+  
+  const { filter } = useParams();
   
   const location = useLocation();
-
-  const { filter } = useParams();
 
   const navigate = useNavigate();
 
@@ -30,9 +29,40 @@ export default function Dashboard() {
       }
     })
 
-    location.pathname === "/Dashboard" ? setPath(true) : setPath(false);
-
   },[navigate,location.pathname])
+
+  let content;
+  switch (filter){
+    case'addPrinter':
+      content=<AddPrinter/>
+      break;
+    case'addLaptop':
+      content=<AddLaptop/>
+      break;
+    case'laptop':
+      content = <LaptopsContainer type="Laptop"/>
+      break;
+    case'pcatable':
+      content = <LaptopsContainer type="pcatable"/>
+      break;
+    case'allinone':
+      content = <LaptopsContainer type="allinone"/>
+      break;
+    case'Imprimantes':
+      content = <PrinterContainer type="Imprimantes"/>
+      break;
+    case'Laser':
+      content = <PrinterContainer type="Laser"/>
+      break;
+    case'Multifonctions':
+      content = <PrinterContainer type="Multifonctions"/>
+      break;
+    case'detailProduit':
+      content = <DetailProduct/>
+      break;
+    default :
+      content = null
+  }
 
   return (
     <div className='dashboardContainer'>
@@ -41,24 +71,7 @@ export default function Dashboard() {
       
 
       <div className='allDashboards'>
-        <div className='headerDashboard'>
-          <div className='searchBarDash'>
-            <div>
-              <img src={search} alt=''/>
-              <input type="text" placeholder='Search for a Model'/>
-            </div>
-            <hr/>
-            <select>
-              <option>Brand</option>
-            </select>
-          </div>
-          <Link to='/Dashboard/add article' className='addArticle'>
-            <img src={add} alt=''/>
-            <p>Ajouter article</p>
-          </Link>
-        </div>
-
-        {path ? <p>Welcome To dashboard</p> : `${filter}`}
+        {content} 
       </div>
       
     </div>

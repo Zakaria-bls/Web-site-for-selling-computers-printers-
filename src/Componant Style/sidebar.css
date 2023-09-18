@@ -1,11 +1,18 @@
+
+.sideBarCoContainer{
+    width: 24%;
+}
+
 .sidedBarContainer{
     width: 24%;
+    position: fixed;
     height: 100vh;
     box-shadow: 0px 4px 20px rgba(0,0,0,.2);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .5vw;
+    overflow-y: scroll;
 }
 
 .sidedBarContainer ul li {
@@ -23,7 +30,7 @@
 }
 
 .sidedBarContainer #logoSideBar{
-    height: 110px;
+    height: 100px;
 }
 
 .sidedBarContainer .sideBar{

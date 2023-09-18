@@ -37,6 +37,10 @@
     gap: 40px;
 }
 
+.inputsContainer a {
+    border-radius: 50%;
+}
+
 .containerInputs{
     width: 100%;
     display: flex;

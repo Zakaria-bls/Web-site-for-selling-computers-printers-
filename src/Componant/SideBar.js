@@ -95,116 +95,119 @@ export default function SideBar() {
 
 
   return (
-    <div className='sidedBarContainer'>
+    <div className='sideBarCoContainer'>
+      <div className='sidedBarContainer'>
 
-      <Link to='/Dashboard/Dashboard'> <img id='logoSideBar' src={logo} alt=''/> </Link>
+            <Link to='/'> <img id='logoSideBar' src={logo} alt=''/> </Link>
 
-      <hr/>
+            <hr/>
 
-      <div className='sideBar'>
+            <div className='sideBar'>
 
-        <div className='sideBarItems'>
+              <div className='sideBarItems'>
 
-          <ul className='sideBarList'>
+                <ul className='sideBarList'>
 
-            <li className=' sideBarItemSpiciale'>
+                  <li className=' sideBarItemSpiciale'>
 
-              <div className={`item ${lapt ? 'active-link' : ''}`}  onClick={toggle1}>
-                <img className='iconsSideBar' src={Pcs} alt=''/>
-                <div>
-                  <p>Ordinateurs</p>
-                  <img className='arrowIcon' src={itemVisible1 ? `${arrUp}` :`${arrDown}`} alt=''/>
-                </div>
-              </div>
-
-              {
-                itemVisible1 
-                &&
-                <ul className='ListInsideList'>
-                    <li><p id="laptop" onClick={handleSelectChange} className={`linkInsideList ${isActive("/Dashboard/laptop")}`} ><img src={linkActive("/Dashboard/laptop")} alt=''/>Lap Top</p></li>
-                    <li><p id="pcatable" onClick={handleSelectChange} className={`linkInsideList ${isActive("/Dashboard/pcatable")}`}><img src={linkActive("/Dashboard/pcatable")} alt=''/>Pc a table</p></li>
-                    <li><p id="allinone" onClick={handleSelectChange} className={`linkInsideList ${isActive("/Dashboard/allinone")}`}><img src={linkActive("/Dashboard/allinone")} alt=''/>All in one</p></li>
-                </ul>
-              }
-
-            </li>
-
-            <li className='sideBarItem'>
-
-              <div className={`item ${print ? 'active-link' : ''}`} onClick={toggle2}>
-                  <img className='iconsSideBar'  src={printers} alt=''/>
-                  <div>
-                    <p>Imprimantes</p>
-                    <img className='arrowIcon' src={itemVisible2 ? `${arrUp}`  :`${arrDown}`} alt=''/>
-                  </div>
-              </div>
-
-              {
-                itemVisible2 
-                &&
-                <ul className='ListInsideList'>
-                    <li><p id="Imprimantes" onClick={handleSelectChange} className={`linkInsideList ${isActive("/Dashboard/Imprimantes")}`}><img src={linkActive("/Dashboard/Imprimantes")} alt=''/>Imprimantes</p></li>
-                    <li><p id="Laser" onClick={handleSelectChange} className={`linkInsideList ${isActive("/Dashboard/Laser")}`}><img src={linkActive("/Dashboard/Laser")} alt=''/>Laser</p></li>
-                    <li><p id="Multifonctions" onClick={handleSelectChange} className={`linkInsideList ${isActive("/Dashboard/Multifonctions")}`}><img src={linkActive("/Dashboard/Multifonctions")} alt=''/>Multifonctions</p></li>
-                </ul>
-              }
-
-            </li>
-
-            <li className={`sideBarItem `}>
-              <Link  to="/Dashboard/Panneau" >
-                  <div className={`item ${isActiveClair("/Dashboard/Panneau")}`}>
-                      <img className='iconsSideBar' src={panel} alt=''/>
+                    <div className={`item ${lapt ? 'active-link' : ''}`}  onClick={toggle1}>
+                      <img className='iconsSideBar' src={Pcs} alt=''/>
                       <div>
-                        <p>Panneau</p>
+                        <p>Ordinateurs</p>
+                        <img className='arrowIcon' src={itemVisible1 ? `${arrUp}` :`${arrDown}`} alt=''/>
                       </div>
-                  </div>
-              </Link>
-            </li>
+                    </div>
 
-            <li className='sideBarItem'>
-              <Link to="/Dashboard/Commandes">
-                  <div className={`item ${isActiveClair("/Dashboard/Commandes")}`}>
-                      <img className='iconsSideBar' src={command} alt=''/>
-                      <div>  
-                        <p>Commandes</p>
-                      </div>
-                  </div>
-              </Link>
-            </li>
+                    {
+                      itemVisible1 
+                      &&
+                      <ul className='ListInsideList'>
+                          <li><p id="laptop" onClick={handleSelectChange} className={`linkInsideList ${isActive("/Dashboard/laptop")}`} ><img src={linkActive("/Dashboard/laptop")} alt=''/>Lap Top</p></li>
+                          <li><p id="pcatable" onClick={handleSelectChange} className={`linkInsideList ${isActive("/Dashboard/pcatable")}`}><img src={linkActive("/Dashboard/pcatable")} alt=''/>Pc a table</p></li>
+                          <li><p id="allinone" onClick={handleSelectChange} className={`linkInsideList ${isActive("/Dashboard/allinone")}`}><img src={linkActive("/Dashboard/allinone")} alt=''/>All in one</p></li>
+                      </ul>
+                    }
 
-            <li className='sideBarItem'>
-              <Link to="/Dashboard/Abonnements">
-                  <div className={`item ${isActiveClair("/Dashboard/Abonnements")}`}>
-                      <img className='iconsSideBar' src={abonnement} alt=''/>
-                      <div>  
-                        <p>Abonnements</p>
-                      </div>
-                  </div>
-              </Link>
-            </li>
+                  </li>
 
-            <li className='sideBarItem'>
-              <Link to="/Dashboard/Contacts">
-                  <div className={`item ${isActiveClair("/Dashboard/Contacts")}`}>
-                      <img className='iconsSideBar' src={contact} alt=''/>
-                      <div> 
-                        <p>Contacts</p>
-                      </div>
-                  </div>
-              </Link>
-            </li>
+                  <li className='sideBarItem'>
 
-          </ul>
+                    <div className={`item ${print ? 'active-link' : ''}`} onClick={toggle2}>
+                        <img className='iconsSideBar'  src={printers} alt=''/>
+                        <div>
+                          <p>Imprimantes</p>
+                          <img className='arrowIcon' src={itemVisible2 ? `${arrUp}`  :`${arrDown}`} alt=''/>
+                        </div>
+                    </div>
 
-        </div>
+                    {
+                      itemVisible2 
+                      &&
+                      <ul className='ListInsideList'>
+                          <li><p id="Imprimantes" onClick={handleSelectChange} className={`linkInsideList ${isActive("/Dashboard/Imprimantes")}`}><img src={linkActive("/Dashboard/Imprimantes")} alt=''/>Imprimantes</p></li>
+                          <li><p id="Laser" onClick={handleSelectChange} className={`linkInsideList ${isActive("/Dashboard/Laser")}`}><img src={linkActive("/Dashboard/Laser")} alt=''/>Laser</p></li>
+                          <li><p id="Multifonctions" onClick={handleSelectChange} className={`linkInsideList ${isActive("/Dashboard/Multifonctions")}`}><img src={linkActive("/Dashboard/Multifonctions")} alt=''/>Multifonctions</p></li>
+                      </ul>
+                    }
 
-        <div onClick={handleLogout} className='deconnecter'>
-          <img src={deconnect} alt=''/>
-          <p>Déconnecter</p>
-        </div>
+                  </li>
 
+                  <li className={`sideBarItem `}>
+                    <Link  to="/Dashboard/Panneau" >
+                        <div className={`item ${isActiveClair("/Dashboard/Panneau")}`}>
+                            <img className='iconsSideBar' src={panel} alt=''/>
+                            <div>
+                              <p>Panneau</p>
+                            </div>
+                        </div>
+                    </Link>
+                  </li>
+
+                  <li className='sideBarItem'>
+                    <Link to="/Dashboard/Commandes">
+                        <div className={`item ${isActiveClair("/Dashboard/Commandes")}`}>
+                            <img className='iconsSideBar' src={command} alt=''/>
+                            <div>  
+                              <p>Commandes</p>
+                            </div>
+                        </div>
+                    </Link>
+                  </li>
+
+                  <li className='sideBarItem'>
+                    <Link to="/Dashboard/Abonnements">
+                        <div className={`item ${isActiveClair("/Dashboard/Abonnements")}`}>
+                            <img className='iconsSideBar' src={abonnement} alt=''/>
+                            <div>  
+                              <p>Abonnements</p>
+                            </div>
+                        </div>
+                    </Link>
+                  </li>
+
+                  <li className='sideBarItem'>
+                    <Link to="/Dashboard/Contacts">
+                        <div className={`item ${isActiveClair("/Dashboard/Contacts")}`}>
+                            <img className='iconsSideBar' src={contact} alt=''/>
+                            <div> 
+                              <p>Contacts</p>
+                            </div>
+                        </div>
+                    </Link>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div onClick={handleLogout} className='deconnecter'>
+                <img src={deconnect} alt=''/>
+                <p>Déconnecter</p>
+              </div>
+
+            </div>
+          </div>
       </div>
-    </div>
+
   )
 }

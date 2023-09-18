@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 import '../Page Style/Login.css'
@@ -87,7 +87,7 @@ export default function Login() {
 
       <div className='inputsContainer'>
 
-        <img src={LoginLogo} alt=''/>
+        <Link to='/'><img src={LoginLogo} alt=''/></Link>
 
         <div className='containerInputs'>
           <div className='inputcontainer'>
